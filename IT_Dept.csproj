@@ -1,0 +1,1095 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">x86</Platform>
+    <ProductVersion>8.0.30703</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{374B724F-6242-48EB-BFD8-55C0398CC821}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>IT_Dept</RootNamespace>
+    <AssemblyName>IT_Dept</AssemblyName>
+    <TargetFrameworkVersion>v4.5</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <IsWebBootstrapper>false</IsWebBootstrapper>
+    <PublishUrl>publish\</PublishUrl>
+    <Install>true</Install>
+    <InstallFrom>Disk</InstallFrom>
+    <UpdateEnabled>false</UpdateEnabled>
+    <UpdateMode>Foreground</UpdateMode>
+    <UpdateInterval>7</UpdateInterval>
+    <UpdateIntervalUnits>Days</UpdateIntervalUnits>
+    <UpdatePeriodically>false</UpdatePeriodically>
+    <UpdateRequired>false</UpdateRequired>
+    <MapFileExtensions>true</MapFileExtensions>
+    <ApplicationRevision>0</ApplicationRevision>
+    <ApplicationVersion>1.0.0.%2a</ApplicationVersion>
+    <UseApplicationTrust>false</UseApplicationTrust>
+    <BootstrapperEnabled>true</BootstrapperEnabled>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|x86' ">
+    <PlatformTarget>x86</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|x86' ">
+    <PlatformTarget>x86</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup>
+    <ApplicationIcon>Artua-Wall-E-Wall-e.ico</ApplicationIcon>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="Microsoft.ReportViewer.Common, Version=11.0.0.0, Culture=neutral, PublicKeyToken=89845dcd8080cc91" />
+    <Reference Include="Microsoft.ReportViewer.WinForms, Version=11.0.0.0, Culture=neutral, PublicKeyToken=89845dcd8080cc91" />
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Management">
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="System.Web.Services" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+    <Reference Include="Telerik.WinControls, Version=2014.2.715.40, Culture=neutral, PublicKeyToken=5bb2a467cbec794e, processorArchitecture=MSIL">
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="Telerik.WinControls.ChartView, Version=2014.2.715.40, Culture=neutral, PublicKeyToken=5bb2a467cbec794e, processorArchitecture=MSIL" />
+    <Reference Include="Telerik.WinControls.GridView, Version=2014.2.715.40, Culture=neutral, PublicKeyToken=5bb2a467cbec794e, processorArchitecture=MSIL">
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="Telerik.WinControls.PdfViewer, Version=2014.2.715.40, Culture=neutral, PublicKeyToken=5bb2a467cbec794e, processorArchitecture=MSIL" />
+    <Reference Include="Telerik.WinControls.PivotGrid, Version=2014.2.715.40, Culture=neutral, PublicKeyToken=5bb2a467cbec794e, processorArchitecture=MSIL" />
+    <Reference Include="Telerik.WinControls.RadChart, Version=2014.2.715.40, Culture=neutral, PublicKeyToken=5bb2a467cbec794e, processorArchitecture=MSIL" />
+    <Reference Include="Telerik.WinControls.RadDock, Version=2014.2.715.40, Culture=neutral, PublicKeyToken=5bb2a467cbec794e, processorArchitecture=MSIL">
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="Telerik.WinControls.RadMarkupEditor, Version=2014.2.715.40, Culture=neutral, PublicKeyToken=5bb2a467cbec794e, processorArchitecture=MSIL" />
+    <Reference Include="Telerik.WinControls.RichTextBox, Version=2014.2.715.40, Culture=neutral, PublicKeyToken=5bb2a467cbec794e, processorArchitecture=MSIL" />
+    <Reference Include="Telerik.WinControls.Scheduler, Version=2014.2.715.40, Culture=neutral, PublicKeyToken=5bb2a467cbec794e, processorArchitecture=MSIL" />
+    <Reference Include="Telerik.WinControls.Themes.Aqua, Version=2014.2.715.40, Culture=neutral, PublicKeyToken=5bb2a467cbec794e, processorArchitecture=MSIL">
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="Telerik.WinControls.Themes.Breeze, Version=2014.2.715.40, Culture=neutral, PublicKeyToken=5bb2a467cbec794e, processorArchitecture=MSIL">
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="Telerik.WinControls.Themes.Desert, Version=2014.2.715.40, Culture=neutral, PublicKeyToken=5bb2a467cbec794e, processorArchitecture=MSIL">
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="Telerik.WinControls.Themes.HighContrastBlack, Version=2014.2.715.40, Culture=neutral, PublicKeyToken=5bb2a467cbec794e, processorArchitecture=MSIL">
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="Telerik.WinControls.Themes.Office2007Black, Version=2014.2.715.40, Culture=neutral, PublicKeyToken=5bb2a467cbec794e, processorArchitecture=MSIL">
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="Telerik.WinControls.Themes.Office2007Silver, Version=2014.2.715.40, Culture=neutral, PublicKeyToken=5bb2a467cbec794e, processorArchitecture=MSIL">
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="Telerik.WinControls.Themes.Office2010Black, Version=2014.2.715.40, Culture=neutral, PublicKeyToken=5bb2a467cbec794e, processorArchitecture=MSIL">
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="Telerik.WinControls.Themes.Office2010Blue, Version=2014.2.715.40, Culture=neutral, PublicKeyToken=5bb2a467cbec794e, processorArchitecture=MSIL">
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="Telerik.WinControls.Themes.Office2010Silver, Version=2014.2.715.40, Culture=neutral, PublicKeyToken=5bb2a467cbec794e, processorArchitecture=MSIL">
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="Telerik.WinControls.Themes.Office2013Dark, Version=2014.2.715.40, Culture=neutral, PublicKeyToken=5bb2a467cbec794e, processorArchitecture=MSIL">
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="Telerik.WinControls.Themes.Office2013Light, Version=2014.2.715.40, Culture=neutral, PublicKeyToken=5bb2a467cbec794e, processorArchitecture=MSIL">
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="Telerik.WinControls.Themes.TelerikMetro, Version=2014.2.715.40, Culture=neutral, PublicKeyToken=5bb2a467cbec794e, processorArchitecture=MSIL">
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="Telerik.WinControls.Themes.TelerikMetroBlue, Version=2014.2.715.40, Culture=neutral, PublicKeyToken=5bb2a467cbec794e, processorArchitecture=MSIL">
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="Telerik.WinControls.Themes.TelerikMetroTouch, Version=2014.2.715.40, Culture=neutral, PublicKeyToken=5bb2a467cbec794e, processorArchitecture=MSIL">
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="Telerik.WinControls.Themes.VisualStudio2012Dark, Version=2014.2.715.40, Culture=neutral, PublicKeyToken=5bb2a467cbec794e, processorArchitecture=MSIL">
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="Telerik.WinControls.Themes.VisualStudio2012Light, Version=2014.2.715.40, Culture=neutral, PublicKeyToken=5bb2a467cbec794e, processorArchitecture=MSIL">
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="Telerik.WinControls.Themes.Windows7, Version=2014.2.715.40, Culture=neutral, PublicKeyToken=5bb2a467cbec794e, processorArchitecture=MSIL">
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="Telerik.WinControls.Themes.Windows8, Version=2014.2.715.40, Culture=neutral, PublicKeyToken=5bb2a467cbec794e, processorArchitecture=MSIL">
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="Telerik.WinControls.UI, Version=2014.2.715.40, Culture=neutral, PublicKeyToken=5bb2a467cbec794e, processorArchitecture=MSIL">
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="Telerik.WinControls.UI.Design, Version=2014.2.715.40, Culture=neutral, PublicKeyToken=5bb2a467cbec794e, processorArchitecture=MSIL">
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="TelerikCommon, Version=2014.2.715.40, Culture=neutral, PublicKeyToken=5bb2a467cbec794e, processorArchitecture=MSIL">
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="TelerikData, Version=2014.2.715.40, Culture=neutral, PublicKeyToken=5bb2a467cbec794e, processorArchitecture=MSIL">
+      <Private>True</Private>
+    </Reference>
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="BL\cls3GSim.cs" />
+    <Compile Include="BL\clsAlarmAndSurveillance.cs" />
+    <Compile Include="BL\clsAreas.cs" />
+    <Compile Include="BL\clsDayOff.cs" />
+    <Compile Include="BL\clsMaintenance.cs" />
+    <Compile Include="BL\clsMaintenanceApp.cs" />
+    <Compile Include="BL\clsWarehouse.cs" />
+    <Compile Include="BL\clsBorderCenter.cs" />
+    <Compile Include="BL\clsCenter.cs" />
+    <Compile Include="BL\clsConSpeed.cs" />
+    <Compile Include="BL\clsConType.cs" />
+    <Compile Include="BL\clsDoneTask.cs" />
+    <Compile Include="BL\clsFingerprint.cs" />
+    <Compile Include="BL\clsGateType.cs" />
+    <Compile Include="BL\clsGovernorate.cs" />
+    <Compile Include="BL\clsMessage.cs" />
+    <Compile Include="BL\clsOrangeCardCenter.cs" />
+    <Compile Include="BL\clsOutboundRecord.cs" />
+    <Compile Include="BL\clsRole.cs" />
+    <Compile Include="BL\clsSIFServer.cs" />
+    <Compile Include="BL\clsToDoTask.cs" />
+    <Compile Include="BL\clsUser.cs" />
+    <Compile Include="BL\clsSyriatelNumber.cs" />
+    <Compile Include="BL\clsWorkAssignment.cs" />
+    <Compile Include="BL\clsDevice.cs" />
+    <Compile Include="BL\Email.cs" />
+    <Compile Include="DL\DLClass.cs" />
+    <Compile Include="PL\frmAddAlarmDevice.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="PL\frmAddAlarmDevice.Designer.cs">
+      <DependentUpon>frmAddAlarmDevice.cs</DependentUpon>
+    </Compile>
+    <Compile Include="PL\frmAddAlarmEmNumber.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="PL\frmAddAlarmEmNumber.Designer.cs">
+      <DependentUpon>frmAddAlarmEmNumber.cs</DependentUpon>
+    </Compile>
+    <Compile Include="PL\frmAddDevice.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="PL\frmAddDevice.Designer.cs">
+      <DependentUpon>frmAddDevice.cs</DependentUpon>
+    </Compile>
+    <Compile Include="PL\frmAddMaintenance.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="PL\frmAddMaintenance.Designer.cs">
+      <DependentUpon>frmAddMaintenance.cs</DependentUpon>
+    </Compile>
+    <Compile Include="PL\frm3GSimCards.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="PL\frm3GSimCards.Designer.cs">
+      <DependentUpon>frm3GSimCards.cs</DependentUpon>
+    </Compile>
+    <Compile Include="PL\frmAbout.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="PL\frmAbout.Designer.cs">
+      <DependentUpon>frmAbout.cs</DependentUpon>
+    </Compile>
+    <Compile Include="PL\frmActivate.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="PL\frmActivate.Designer.cs">
+      <DependentUpon>frmActivate.cs</DependentUpon>
+    </Compile>
+    <Compile Include="PL\frmAdd3GSim.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="PL\frmAdd3GSim.Designer.cs">
+      <DependentUpon>frmAdd3GSim.cs</DependentUpon>
+    </Compile>
+    <Compile Include="PL\frmAddArea.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="PL\frmAddArea.Designer.cs">
+      <DependentUpon>frmAddArea.cs</DependentUpon>
+    </Compile>
+    <Compile Include="PL\frmAddCenter.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="PL\frmAddCenter.Designer.cs">
+      <DependentUpon>frmAddCenter.cs</DependentUpon>
+    </Compile>
+    <Compile Include="PL\frmAddConSpeed.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="PL\frmAddConSpeed.Designer.cs">
+      <DependentUpon>frmAddConSpeed.cs</DependentUpon>
+    </Compile>
+    <Compile Include="PL\frmAddConType.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="PL\frmAddConType.Designer.cs">
+      <DependentUpon>frmAddConType.cs</DependentUpon>
+    </Compile>
+    <Compile Include="PL\frmAddDoneTask.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="PL\frmAddDoneTask.Designer.cs">
+      <DependentUpon>frmAddDoneTask.cs</DependentUpon>
+    </Compile>
+    <Compile Include="PL\frmAddEmail.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="PL\frmAddEmail.Designer.cs">
+      <DependentUpon>frmAddEmail.cs</DependentUpon>
+    </Compile>
+    <Compile Include="PL\frmAddGateType.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="PL\frmAddGateType.Designer.cs">
+      <DependentUpon>frmAddGateType.cs</DependentUpon>
+    </Compile>
+    <Compile Include="PL\frmAddGov.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="PL\frmAddGov.Designer.cs">
+      <DependentUpon>frmAddGov.cs</DependentUpon>
+    </Compile>
+    <Compile Include="PL\frmAddOutboundRecord.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="PL\frmAddOutboundRecord.Designer.cs">
+      <DependentUpon>frmAddOutboundRecord.cs</DependentUpon>
+    </Compile>
+    <Compile Include="PL\frmAddRole.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="PL\frmAddRole.Designer.cs">
+      <DependentUpon>frmAddRole.cs</DependentUpon>
+    </Compile>
+    <Compile Include="PL\frmAddSIFServer.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="PL\frmAddSIFServer.Designer.cs">
+      <DependentUpon>frmAddSIFServer.cs</DependentUpon>
+    </Compile>
+    <Compile Include="PL\frmAddSurDevice.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="PL\frmAddSurDevice.Designer.cs">
+      <DependentUpon>frmAddSurDevice.cs</DependentUpon>
+    </Compile>
+    <Compile Include="PL\frmAddSyriatelNumber.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="PL\frmAddSyriatelNumber.designer.cs">
+      <DependentUpon>frmAddSyriatelNumber.cs</DependentUpon>
+    </Compile>
+    <Compile Include="PL\frmAddToDoTask.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="PL\frmAddToDoTask.Designer.cs">
+      <DependentUpon>frmAddToDoTask.cs</DependentUpon>
+    </Compile>
+    <Compile Include="PL\frmAddUser.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="PL\frmAddUser.Designer.cs">
+      <DependentUpon>frmAddUser.cs</DependentUpon>
+    </Compile>
+    <Compile Include="PL\frmAddWorkAssignemt.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="PL\frmAddWorkAssignemt.Designer.cs">
+      <DependentUpon>frmAddWorkAssignemt.cs</DependentUpon>
+    </Compile>
+    <Compile Include="PL\frmAlarmERNumbers.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="PL\frmAlarmERNumbers.Designer.cs">
+      <DependentUpon>frmAlarmERNumbers.cs</DependentUpon>
+    </Compile>
+    <Compile Include="PL\frmAllDailyTasks.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="PL\frmAllDailyTasks.Designer.cs">
+      <DependentUpon>frmAllDailyTasks.cs</DependentUpon>
+    </Compile>
+    <Compile Include="PL\frmAllDeviceMaintenances.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="PL\frmAllDeviceMaintenances.Designer.cs">
+      <DependentUpon>frmAllDeviceMaintenances.cs</DependentUpon>
+    </Compile>
+    <Compile Include="PL\frmAreas.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="PL\frmAreas.Designer.cs">
+      <DependentUpon>frmAreas.cs</DependentUpon>
+    </Compile>
+    <Compile Include="PL\frmAssign.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="PL\frmAssign.Designer.cs">
+      <DependentUpon>frmAssign.cs</DependentUpon>
+    </Compile>
+    <Compile Include="PL\frmBackgrounds.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="PL\frmBackgrounds.Designer.cs">
+      <DependentUpon>frmBackgrounds.cs</DependentUpon>
+    </Compile>
+    <Compile Include="PL\frmBackUpDB.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="PL\frmBackUpDB.Designer.cs">
+      <DependentUpon>frmBackUpDB.cs</DependentUpon>
+    </Compile>
+    <Compile Include="PL\frmCenters.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="PL\frmCenters.Designer.cs">
+      <DependentUpon>frmCenters.cs</DependentUpon>
+    </Compile>
+    <Compile Include="PL\frmChangePassword.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="PL\frmChangePassword.Designer.cs">
+      <DependentUpon>frmChangePassword.cs</DependentUpon>
+    </Compile>
+    <Compile Include="PL\frmCloseMaintenance.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="PL\frmCloseMaintenance.Designer.cs">
+      <DependentUpon>frmCloseMaintenance.cs</DependentUpon>
+    </Compile>
+    <Compile Include="PL\frmConnectionTypes.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="PL\frmConnectionTypes.Designer.cs">
+      <DependentUpon>frmConnectionTypes.cs</DependentUpon>
+    </Compile>
+    <Compile Include="PL\frmConnectRemoteDesktop.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="PL\frmConnectRemoteDesktop.Designer.cs">
+      <DependentUpon>frmConnectRemoteDesktop.cs</DependentUpon>
+    </Compile>
+    <Compile Include="PL\frmConSpeeds.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="PL\frmConSpeeds.Designer.cs">
+      <DependentUpon>frmConSpeeds.cs</DependentUpon>
+    </Compile>
+    <Compile Include="PL\frmCreateDayOffDoc.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="PL\frmCreateDayOffDoc.Designer.cs">
+      <DependentUpon>frmCreateDayOffDoc.cs</DependentUpon>
+    </Compile>
+    <Compile Include="PL\frmCreateTravelAssignment.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="PL\frmCreateTravelAssignment.Designer.cs">
+      <DependentUpon>frmCreateTravelAssignment.cs</DependentUpon>
+    </Compile>
+    <Compile Include="PL\frmCreateWorkAssignmentDoc.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="PL\frmCreateWorkAssignmentDoc.Designer.cs">
+      <DependentUpon>frmCreateWorkAssignmentDoc.cs</DependentUpon>
+    </Compile>
+    <Compile Include="PL\frmDayOffs.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="PL\frmDayOffs.Designer.cs">
+      <DependentUpon>frmDayOffs.cs</DependentUpon>
+    </Compile>
+    <Compile Include="PL\frmDocuments.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="PL\frmDocuments.Designer.cs">
+      <DependentUpon>frmDocuments.cs</DependentUpon>
+    </Compile>
+    <Compile Include="PL\frmDoneTasks.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="PL\frmDoneTasks.Designer.cs">
+      <DependentUpon>frmDoneTasks.cs</DependentUpon>
+    </Compile>
+    <Compile Include="PL\frmEmails.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="PL\frmEmails.Designer.cs">
+      <DependentUpon>frmEmails.cs</DependentUpon>
+    </Compile>
+    <Compile Include="PL\frmGateTypes.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="PL\frmGateTypes.Designer.cs">
+      <DependentUpon>frmGateTypes.cs</DependentUpon>
+    </Compile>
+    <Compile Include="PL\frmGovernorates.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="PL\frmGovernorates.Designer.cs">
+      <DependentUpon>frmGovernorates.cs</DependentUpon>
+    </Compile>
+    <Compile Include="PL\frmLogin.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="PL\frmLogin.Designer.cs">
+      <DependentUpon>frmLogin.cs</DependentUpon>
+    </Compile>
+    <Compile Include="PL\frmMain.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="PL\frmMain.Designer.cs">
+      <DependentUpon>frmMain.cs</DependentUpon>
+    </Compile>
+    <Compile Include="PL\frmMaintenanceDetails.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="PL\frmMaintenanceDetails.Designer.cs">
+      <DependentUpon>frmMaintenanceDetails.cs</DependentUpon>
+    </Compile>
+    <Compile Include="PL\frmMaintenanceOut.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="PL\frmMaintenanceOut.Designer.cs">
+      <DependentUpon>frmMaintenanceOut.cs</DependentUpon>
+    </Compile>
+    <Compile Include="PL\frmMaintenances.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="PL\frmMaintenances.Designer.cs">
+      <DependentUpon>frmMaintenances.cs</DependentUpon>
+    </Compile>
+    <Compile Include="PL\frmMaintenancesApp.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="PL\frmMaintenancesApp.Designer.cs">
+      <DependentUpon>frmMaintenancesApp.cs</DependentUpon>
+    </Compile>
+    <Compile Include="PL\frmMaintenanceTrack.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="PL\frmMaintenanceTrack.Designer.cs">
+      <DependentUpon>frmMaintenanceTrack.cs</DependentUpon>
+    </Compile>
+    <Compile Include="PL\frmMessages.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="PL\frmMessages.Designer.cs">
+      <DependentUpon>frmMessages.cs</DependentUpon>
+    </Compile>
+    <Compile Include="PL\frmOutboundRecord.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="PL\frmOutboundRecord.Designer.cs">
+      <DependentUpon>frmOutboundRecord.cs</DependentUpon>
+    </Compile>
+    <Compile Include="PL\frmPayDocs.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="PL\frmPayDocs.designer.cs">
+      <DependentUpon>frmPayDocs.cs</DependentUpon>
+    </Compile>
+    <Compile Include="PL\frmPingIP.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="PL\frmPingIP.Designer.cs">
+      <DependentUpon>frmPingIP.cs</DependentUpon>
+    </Compile>
+    <Compile Include="PL\frmPreviewDailyTask.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="PL\frmPreviewDailyTask.Designer.cs">
+      <DependentUpon>frmPreviewDailyTask.cs</DependentUpon>
+    </Compile>
+    <Compile Include="PL\frmRegisterApp.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="PL\frmRegisterApp.Designer.cs">
+      <DependentUpon>frmRegisterApp.cs</DependentUpon>
+    </Compile>
+    <Compile Include="PL\frmRolesDesc.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="PL\frmRolesDesc.Designer.cs">
+      <DependentUpon>frmRolesDesc.cs</DependentUpon>
+    </Compile>
+    <Compile Include="PL\frmSendMessage.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="PL\frmSendMessage.Designer.cs">
+      <DependentUpon>frmSendMessage.cs</DependentUpon>
+    </Compile>
+    <Compile Include="PL\frmResetUserPassword.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="PL\frmResetUserPassword.Designer.cs">
+      <DependentUpon>frmResetUserPassword.cs</DependentUpon>
+    </Compile>
+    <Compile Include="PL\frmServersShutdown.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="PL\frmServersShutdown.Designer.cs">
+      <DependentUpon>frmServersShutdown.cs</DependentUpon>
+    </Compile>
+    <Compile Include="PL\frmSIFServers.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="PL\frmSIFServers.Designer.cs">
+      <DependentUpon>frmSIFServers.cs</DependentUpon>
+    </Compile>
+    <Compile Include="PL\frmSplashScreen.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="PL\frmSplashScreen.Designer.cs">
+      <DependentUpon>frmSplashScreen.cs</DependentUpon>
+    </Compile>
+    <Compile Include="PL\frmStartMaintenance.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="PL\frmStartMaintenance.Designer.cs">
+      <DependentUpon>frmStartMaintenance.cs</DependentUpon>
+    </Compile>
+    <Compile Include="PL\frmSurvAlarms.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="PL\frmSurvAlarms.Designer.cs">
+      <DependentUpon>frmSurvAlarms.cs</DependentUpon>
+    </Compile>
+    <Compile Include="PL\frmSyriatelNumbers.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="PL\frmSyriatelNumbers.Designer.cs">
+      <DependentUpon>frmSyriatelNumbers.cs</DependentUpon>
+    </Compile>
+    <Compile Include="PL\frmTaskReminder.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="PL\frmTaskReminder.Designer.cs">
+      <DependentUpon>frmTaskReminder.cs</DependentUpon>
+    </Compile>
+    <Compile Include="PL\frmToDoList.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="PL\frmToDoList.Designer.cs">
+      <DependentUpon>frmToDoList.cs</DependentUpon>
+    </Compile>
+    <Compile Include="PL\frmUnlockUsersMngmnt.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="PL\frmUnlockUsersMngmnt.Designer.cs">
+      <DependentUpon>frmUnlockUsersMngmnt.cs</DependentUpon>
+    </Compile>
+    <Compile Include="PL\frmUserRoles.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="PL\frmUserRoles.Designer.cs">
+      <DependentUpon>frmUserRoles.cs</DependentUpon>
+    </Compile>
+    <Compile Include="PL\frmUserSetProblem.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="PL\frmUserSetProblem.Designer.cs">
+      <DependentUpon>frmUserSetProblem.cs</DependentUpon>
+    </Compile>
+    <Compile Include="PL\frmUsersMng.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="PL\frmUsersMng.Designer.cs">
+      <DependentUpon>frmUsersMng.cs</DependentUpon>
+    </Compile>
+    <Compile Include="PL\frmViewMessage.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="PL\frmViewMessage.Designer.cs">
+      <DependentUpon>frmViewMessage.cs</DependentUpon>
+    </Compile>
+    <Compile Include="PL\frmWorkAssignments.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="PL\frmWorkAssignments.Designer.cs">
+      <DependentUpon>frmWorkAssignments.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <EmbeddedResource Include="PL\frmAddAlarmDevice.resx">
+      <DependentUpon>frmAddAlarmDevice.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="PL\frmAddAlarmEmNumber.resx">
+      <DependentUpon>frmAddAlarmEmNumber.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="PL\frmAddDevice.resx">
+      <DependentUpon>frmAddDevice.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="PL\frmAddMaintenance.resx">
+      <DependentUpon>frmAddMaintenance.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="PL\frm3GSimCards.resx">
+      <DependentUpon>frm3GSimCards.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="PL\frmAbout.resx">
+      <DependentUpon>frmAbout.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="PL\frmActivate.resx">
+      <DependentUpon>frmActivate.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="PL\frmAdd3GSim.resx">
+      <DependentUpon>frmAdd3GSim.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="PL\frmAddArea.resx">
+      <DependentUpon>frmAddArea.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="PL\frmAddCenter.resx">
+      <DependentUpon>frmAddCenter.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="PL\frmAddConSpeed.resx">
+      <DependentUpon>frmAddConSpeed.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="PL\frmAddConType.resx">
+      <DependentUpon>frmAddConType.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="PL\frmAddDoneTask.resx">
+      <DependentUpon>frmAddDoneTask.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="PL\frmAddEmail.resx">
+      <DependentUpon>frmAddEmail.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="PL\frmAddGateType.resx">
+      <DependentUpon>frmAddGateType.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="PL\frmAddGov.resx">
+      <DependentUpon>frmAddGov.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="PL\frmAddOutboundRecord.resx">
+      <DependentUpon>frmAddOutboundRecord.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="PL\frmAddRole.resx">
+      <DependentUpon>frmAddRole.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="PL\frmAddSIFServer.resx">
+      <DependentUpon>frmAddSIFServer.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="PL\frmAddSurDevice.resx">
+      <DependentUpon>frmAddSurDevice.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="PL\frmAddSyriatelNumber.resx">
+      <DependentUpon>frmAddSyriatelNumber.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="PL\frmAddToDoTask.resx">
+      <DependentUpon>frmAddToDoTask.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="PL\frmAddUser.resx">
+      <DependentUpon>frmAddUser.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="PL\frmAddWorkAssignemt.resx">
+      <DependentUpon>frmAddWorkAssignemt.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="PL\frmAlarmERNumbers.resx">
+      <DependentUpon>frmAlarmERNumbers.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="PL\frmAllDailyTasks.resx">
+      <DependentUpon>frmAllDailyTasks.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="PL\frmAllDeviceMaintenances.resx">
+      <DependentUpon>frmAllDeviceMaintenances.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="PL\frmAreas.resx">
+      <DependentUpon>frmAreas.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="PL\frmAssign.resx">
+      <DependentUpon>frmAssign.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="PL\frmBackgrounds.resx">
+      <DependentUpon>frmBackgrounds.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="PL\frmBackUpDB.resx">
+      <DependentUpon>frmBackUpDB.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="PL\frmCenters.resx">
+      <DependentUpon>frmCenters.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="PL\frmChangePassword.resx">
+      <DependentUpon>frmChangePassword.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="PL\frmCloseMaintenance.resx">
+      <DependentUpon>frmCloseMaintenance.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="PL\frmConnectionTypes.resx">
+      <DependentUpon>frmConnectionTypes.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="PL\frmConnectRemoteDesktop.resx">
+      <DependentUpon>frmConnectRemoteDesktop.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="PL\frmConSpeeds.resx">
+      <DependentUpon>frmConSpeeds.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="PL\frmCreateDayOffDoc.resx">
+      <DependentUpon>frmCreateDayOffDoc.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="PL\frmCreateTravelAssignment.resx">
+      <DependentUpon>frmCreateTravelAssignment.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="PL\frmCreateWorkAssignmentDoc.resx">
+      <DependentUpon>frmCreateWorkAssignmentDoc.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="PL\frmDayOffs.resx">
+      <DependentUpon>frmDayOffs.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="PL\frmDocuments.resx">
+      <DependentUpon>frmDocuments.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="PL\frmDoneTasks.resx">
+      <DependentUpon>frmDoneTasks.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="PL\frmEmails.resx">
+      <DependentUpon>frmEmails.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="PL\frmGateTypes.resx">
+      <DependentUpon>frmGateTypes.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="PL\frmGovernorates.resx">
+      <DependentUpon>frmGovernorates.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="PL\frmLogin.resx">
+      <DependentUpon>frmLogin.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="PL\frmMain.resx">
+      <DependentUpon>frmMain.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="PL\frmMaintenanceDetails.resx">
+      <DependentUpon>frmMaintenanceDetails.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="PL\frmMaintenanceOut.resx">
+      <DependentUpon>frmMaintenanceOut.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="PL\frmMaintenances.resx">
+      <DependentUpon>frmMaintenances.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="PL\frmMaintenancesApp.resx">
+      <DependentUpon>frmMaintenancesApp.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="PL\frmMaintenanceTrack.resx">
+      <DependentUpon>frmMaintenanceTrack.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="PL\frmMessages.resx">
+      <DependentUpon>frmMessages.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="PL\frmOutboundRecord.resx">
+      <DependentUpon>frmOutboundRecord.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="PL\frmPayDocs.resx">
+      <DependentUpon>frmPayDocs.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="PL\frmPingIP.resx">
+      <DependentUpon>frmPingIP.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="PL\frmPreviewDailyTask.resx">
+      <DependentUpon>frmPreviewDailyTask.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="PL\frmRegisterApp.resx">
+      <DependentUpon>frmRegisterApp.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="PL\frmRolesDesc.resx">
+      <DependentUpon>frmRolesDesc.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="PL\frmSendMessage.resx">
+      <DependentUpon>frmSendMessage.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="PL\frmResetUserPassword.resx">
+      <DependentUpon>frmResetUserPassword.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="PL\frmServersShutdown.resx">
+      <DependentUpon>frmServersShutdown.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="PL\frmSIFServers.resx">
+      <DependentUpon>frmSIFServers.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="PL\frmSplashScreen.resx">
+      <DependentUpon>frmSplashScreen.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="PL\frmStartMaintenance.resx">
+      <DependentUpon>frmStartMaintenance.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="PL\frmSurvAlarms.resx">
+      <DependentUpon>frmSurvAlarms.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="PL\frmSyriatelNumbers.resx">
+      <DependentUpon>frmSyriatelNumbers.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="PL\frmTaskReminder.resx">
+      <DependentUpon>frmTaskReminder.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="PL\frmToDoList.resx">
+      <DependentUpon>frmToDoList.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="PL\frmUnlockUsersMngmnt.resx">
+      <DependentUpon>frmUnlockUsersMngmnt.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="PL\frmUserRoles.resx">
+      <DependentUpon>frmUserRoles.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="PL\frmUserSetProblem.resx">
+      <DependentUpon>frmUserSetProblem.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="PL\frmUsersMng.resx">
+      <DependentUpon>frmUsersMng.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="PL\frmViewMessage.resx">
+      <DependentUpon>frmViewMessage.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="PL\frmWorkAssignments.resx">
+      <DependentUpon>frmWorkAssignments.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Resources.resx</DependentUpon>
+      <DesignTime>True</DesignTime>
+    </Compile>
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="App.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <BootstrapperPackage Include=".NETFramework,Version=v4.5">
+      <Visible>False</Visible>
+      <ProductName>Microsoft .NET Framework 4.5 %28x86 and x64%29</ProductName>
+      <Install>true</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Net.Client.3.5">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework 3.5 SP1 Client Profile</ProductName>
+      <Install>false</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Net.Framework.3.5.SP1">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework 3.5 SP1</ProductName>
+      <Install>false</Install>
+    </BootstrapperPackage>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\UserLogin.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\new.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\edit2.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\delete.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\delete2.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\check.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\check1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\uncheck.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\bg2.JPG" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\todo.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\images.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\InsNe.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Custom-Icon-Design-Pretty-Office-6-Logout.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Oxygen-Icons.org-Oxygen-Actions-system-shutdown.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\bell4.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\ok.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\ok1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Reminder3.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\ok-button-png-hi.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\4f_here-I-am.wav" />
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="PL\Reports\" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\send-button.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\meteor_mail.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\send-png-md.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\cancel.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\messages.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\new-message-icon-94631.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\close.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\ok2.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\open.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Artua-Wall-E-Wall-e.ico" />
+    <Content Include="Pixelresort-Wall-E-Wall-E.ico" />
+    <None Include="Resources\bg11.JPG" />
+    <None Include="Resources\newB.jpg" />
+    <None Include="Resources\s.jpg" />
+    <None Include="Resources\m1.jpg" />
+    <None Include="Resources\BTN-Maintenance.gif" />
+    <None Include="Resources\up.png" />
+    <None Include="Resources\down.png" />
+    <None Include="Resources\m.jpg" />
+    <None Include="Resources\email-logo.png" />
+    <None Include="Resources\documents_and_files.png" />
+    <None Include="Resources\TeamViewer.jpg" />
+    <None Include="Resources\1529784087_1373614272.jpg" />
+    <None Include="Resources\Shut-Down-Setting-in-Windows-8.png" />
+    <None Include="Resources\Evil-Loader-For-Websites1.png" />
+    <None Include="Resources\Evil-Loader-For-Websites.png" />
+    <None Include="Resources\Icondesigner.net-Hyperion-Time-Machine.ico" />
+    <None Include="Resources\Icontoaster-Leox-Graphite-Backup.ico" />
+    <None Include="Resources\backup-icon.png" />
+    <None Include="Resources\150504-backup-restore.png" />
+    <None Include="Resources\log.png" />
+    <None Include="Resources\Free-Ping-Service.png" />
+    <None Include="Resources\LevelLocked.png" />
+    <None Include="Resources\unl.png" />
+    <None Include="Resources\ip-address.jpg" />
+    <None Include="Resources\unnamed.png" />
+    <None Include="Resources\cor.jpg" />
+    <None Include="Resources\sims.jpg" />
+    <None Include="Resources\job-rotation-300x300.jpg" />
+    <None Include="Resources\unlock.png" />
+    <None Include="Resources\bg9.jpg" />
+    <None Include="Resources\bg6.jpg" />
+    <None Include="Resources\b10.jpg" />
+    <None Include="Resources\bg5.jpg" />
+    <None Include="Resources\save-as-icon-94967.png" />
+    <None Include="Resources\bg4.JPG" />
+    <None Include="Resources\bg3.JPG" />
+    <None Include="Resources\report-icon.gif" />
+    <None Include="Resources\d.jpg" />
+    <None Include="Resources\my_computer.png" />
+    <None Include="Resources\Artua-Wall-E-Wall-e.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <COMReference Include="AxMSTSCLib">
+      <Guid>{8C11EFA1-92C3-11D1-BC1E-00C04FA31489}</Guid>
+      <VersionMajor>1</VersionMajor>
+      <VersionMinor>0</VersionMinor>
+      <Lcid>0</Lcid>
+      <WrapperTool>aximp</WrapperTool>
+      <Isolated>False</Isolated>
+    </COMReference>
+    <COMReference Include="Microsoft.Office.Core">
+      <Guid>{2DF8D04C-5BFA-101B-BDE5-00AA0044DE52}</Guid>
+      <VersionMajor>2</VersionMajor>
+      <VersionMinor>7</VersionMinor>
+      <Lcid>0</Lcid>
+      <WrapperTool>primary</WrapperTool>
+      <Isolated>False</Isolated>
+      <EmbedInteropTypes>True</EmbedInteropTypes>
+    </COMReference>
+    <COMReference Include="Microsoft.Office.Interop.Word">
+      <Guid>{00020905-0000-0000-C000-000000000046}</Guid>
+      <VersionMajor>8</VersionMajor>
+      <VersionMinor>6</VersionMinor>
+      <Lcid>0</Lcid>
+      <WrapperTool>primary</WrapperTool>
+      <Isolated>False</Isolated>
+      <EmbedInteropTypes>True</EmbedInteropTypes>
+    </COMReference>
+    <COMReference Include="MSTSCLib">
+      <Guid>{8C11EFA1-92C3-11D1-BC1E-00C04FA31489}</Guid>
+      <VersionMajor>1</VersionMajor>
+      <VersionMinor>0</VersionMinor>
+      <Lcid>0</Lcid>
+      <WrapperTool>tlbimp</WrapperTool>
+      <Isolated>False</Isolated>
+      <EmbedInteropTypes>True</EmbedInteropTypes>
+    </COMReference>
+    <COMReference Include="VBIDE">
+      <Guid>{0002E157-0000-0000-C000-000000000046}</Guid>
+      <VersionMajor>5</VersionMajor>
+      <VersionMinor>3</VersionMinor>
+      <Lcid>0</Lcid>
+      <WrapperTool>primary</WrapperTool>
+      <Isolated>False</Isolated>
+      <EmbedInteropTypes>True</EmbedInteropTypes>
+    </COMReference>
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

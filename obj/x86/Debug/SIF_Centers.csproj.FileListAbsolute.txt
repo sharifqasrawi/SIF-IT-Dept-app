@@ -1,0 +1,20 @@
+C:\Users\test3\Desktop\SIF_Centers\SIF_Centers\bin\Debug\SIF_Centers.exe.config
+C:\Users\test3\Desktop\SIF_Centers\SIF_Centers\obj\x86\Debug\SIF_Centers.csprojResolveAssemblyReference.cache
+C:\Users\test3\Desktop\SIF_Centers\SIF_Centers\obj\x86\Debug\SIF_Centers.Properties.Resources.resources
+C:\Users\test3\Desktop\SIF_Centers\SIF_Centers\obj\x86\Debug\SIF_Centers.csproj.GenerateResource.Cache
+C:\Users\test3\Desktop\SIF_Centers\SIF_Centers\bin\Debug\SIF_Centers.exe
+C:\Users\test3\Desktop\SIF_Centers\SIF_Centers\bin\Debug\SIF_Centers.pdb
+C:\Users\test3\Desktop\SIF_Centers\SIF_Centers\obj\x86\Debug\SIF_Centers.exe
+C:\Users\test3\Desktop\SIF_Centers\SIF_Centers\obj\x86\Debug\SIF_Centers.pdb
+C:\Users\test3\Desktop\SIF_Centers\SIF_Centers\obj\x86\Debug\SIF_Centers.PL.frmAreas.resources
+C:\Users\test3\Desktop\SIF_Centers\SIF_Centers\obj\x86\Debug\SIF_Centers.PL.frmAddArea.resources
+C:\Users\test3\Desktop\SIF_Centers - Copy\SIF_Centers\bin\Debug\IT_Dept.exe.config
+C:\Users\test3\Desktop\SIF_Centers - Copy\SIF_Centers\bin\Debug\IT_Dept.exe
+C:\Users\test3\Desktop\SIF_Centers - Copy\SIF_Centers\bin\Debug\IT_Dept.pdb
+C:\Users\test3\Desktop\SIF_Centers - Copy\SIF_Centers\obj\x86\Debug\SIF_Centers.csprojResolveAssemblyReference.cache
+C:\Users\test3\Desktop\SIF_Centers - Copy\SIF_Centers\obj\x86\Debug\SIF_Centers.PL.frmAddArea.resources
+C:\Users\test3\Desktop\SIF_Centers - Copy\SIF_Centers\obj\x86\Debug\SIF_Centers.PL.frmAreas.resources
+C:\Users\test3\Desktop\SIF_Centers - Copy\SIF_Centers\obj\x86\Debug\IT_Dept.Properties.Resources.resources
+C:\Users\test3\Desktop\SIF_Centers - Copy\SIF_Centers\obj\x86\Debug\SIF_Centers.csproj.GenerateResource.Cache
+C:\Users\test3\Desktop\SIF_Centers - Copy\SIF_Centers\obj\x86\Debug\IT_Dept.exe
+C:\Users\test3\Desktop\SIF_Centers - Copy\SIF_Centers\obj\x86\Debug\IT_Dept.pdb
